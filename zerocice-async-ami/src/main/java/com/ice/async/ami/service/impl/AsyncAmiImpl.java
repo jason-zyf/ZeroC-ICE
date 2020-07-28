@@ -1,7 +1,7 @@
-package com.test.ice.async.service.impl;
+package com.ice.async.ami.service.impl;
 
 import Ice.Current;
-import com.test.ice.async.generated._TestAsyncAmiDisp;
+import com.ice.async.ami.generated._AsyncAmiDisp;
 
 /**
  * @author zyting
@@ -10,7 +10,7 @@ import com.test.ice.async.generated._TestAsyncAmiDisp;
  * 仅仅基于ice的同步方法扩展了同步的扩展方式，其他理念改动不大，使用起来好理解，
  * 但服务端依赖异步线程数量配置，线程数量如果爆仓，后面的请求全部都会丢失
  */
-public class TestAsyncAmiImpl extends _TestAsyncAmiDisp {
+public class AsyncAmiImpl extends _AsyncAmiDisp {
 
 
     public String getAsyncStr(String s, Current __current) {

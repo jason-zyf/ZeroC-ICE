@@ -1,14 +1,14 @@
-package com.test.ice.async.callback;
+package com.ice.async.ami.callback;
 
 import Ice.LocalException;
-import com.test.ice.async.generated.Callback_TestAsyncAmi_getAsyncStr;
+import com.ice.async.ami.generated.Callback_AsyncAmi_getAsyncStr;
 
 /**
  * @author zyting
  * @sinne 2020-07-28
  * Ami 客户端回调
  */
-public class AsyncAmi_interpolateI extends Callback_TestAsyncAmi_getAsyncStr {
+public class AsyncAmi_interpolate extends Callback_AsyncAmi_getAsyncStr {
 
     @Override
     public void response(String s) {

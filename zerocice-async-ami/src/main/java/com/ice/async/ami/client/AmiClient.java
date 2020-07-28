@@ -1,11 +1,12 @@
-package com.test.ice.async.client;
+package com.ice.async.ami.client;
 
-import Ice.*;
-import com.test.ice.async.callback.AsyncAmi_interpolateI;
-import com.test.ice.async.generated.TestAsyncAmiPrx;
-import com.test.ice.async.generated.TestAsyncAmiPrxHelper;
-
-import java.lang.Exception;
+import Ice.Communicator;
+import Ice.LocalException;
+import Ice.ObjectPrx;
+import Ice.Util;
+import com.ice.async.ami.callback.AsyncAmi_interpolate;
+import com.ice.async.ami.generated.AsyncAmiPrx;
+import com.ice.async.ami.generated.AsyncAmiPrxHelper;
 
 /**
  * @author zyting
@@ -28,7 +29,7 @@ public class AmiClient {
             }
 
             // 获取代理
-            TestAsyncAmiPrx amiProxy = TestAsyncAmiPrxHelper.checkedCast(base);
+            AsyncAmiPrx amiProxy = AsyncAmiPrxHelper.checkedCast(base);
             if(amiProxy == null){
                 throw new RuntimeException("Invalid proxy");
             }
@@ -38,7 +39,7 @@ public class AmiClient {
 //            System.out.println(sync);
 
             // 定义回调方式
-            AsyncAmi_interpolateI back = new AsyncAmi_interpolateI();
+            AsyncAmi_interpolate back = new AsyncAmi_interpolate();
             // 注入回调方式，异步请求数据
             amiProxy.begin_getAsyncStr("World!", back);
 

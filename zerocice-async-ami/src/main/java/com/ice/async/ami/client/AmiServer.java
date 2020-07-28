@@ -1,9 +1,9 @@
-package com.test.ice.async.client;
+package com.ice.async.ami.client;
 
 import Ice.Object;
 import Ice.ObjectAdapter;
 import Ice.Util;
-import com.test.ice.async.service.impl.TestAsyncAmiImpl;
+import com.ice.async.ami.service.impl.AsyncAmiImpl;
 
 /**
  * @author zyting
@@ -29,7 +29,7 @@ public class AmiServer extends Ice.Application{
                 communicator().createObjectAdapterWithEndpoints("AsyncAmi", "default -p 8778");
 
         // 创建一个servant 实例
-        Object servant = new TestAsyncAmiImpl();
+        Object servant = new AsyncAmiImpl();
 
         // 添加到适配器里面
         adapter.add(servant, Util.stringToIdentity("testAmi"));
