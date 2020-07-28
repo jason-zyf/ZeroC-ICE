@@ -11,6 +11,7 @@
 
     <modules>
         <module>zerocice-demo</module>
+        <module>zerocice-async-ami</module>
     </modules>
 
     <dependencies>
