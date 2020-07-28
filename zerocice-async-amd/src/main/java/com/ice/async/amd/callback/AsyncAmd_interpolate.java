@@ -14,8 +14,8 @@ public class AsyncAmd_interpolate extends Callback_AsyncAmd_getAsyncAmdStr {
 
     // 无异常回调
     @Override
-    public void response(String s) {
-        System.out.println("收到回调信息："+ s);
+    public void response(String response) {
+        System.out.println("收到回调信息："+ response + " 处理业务");
     }
 
     // 异常回调

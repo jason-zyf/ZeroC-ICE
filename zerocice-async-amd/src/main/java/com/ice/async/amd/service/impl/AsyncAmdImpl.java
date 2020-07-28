@@ -23,7 +23,7 @@ public class AsyncAmdImpl extends _AsyncAmdDisp {
     public void getAsyncAmdStr_async(AMD_AsyncAmd_getAsyncAmdStr __cb, String s, Current __current) {
 
         try {
-            Thread.sleep(5000);
+            Thread.sleep(1000);
             System.out.println("服务端执行方法。。。。");
         } catch (InterruptedException e) {
             e.printStackTrace();
