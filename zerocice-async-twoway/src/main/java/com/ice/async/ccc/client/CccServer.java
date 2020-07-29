@@ -13,7 +13,7 @@ import com.ice.async.ccc.service.impl.CccImpl;
 public class CccServer extends Ice.Application{
 
     public static void main(String[] args) {
-        System.out.println("C++服务器启动。。。。。");
+        System.out.println("C++服务器启动，用于监听java端第一次请求。。。。。");
         // 实例化服务
         CccServer app = new CccServer();
         // 启动服务（这里执行了run方法）

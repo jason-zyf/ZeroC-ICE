@@ -20,7 +20,7 @@ public class CccImpl extends _AsyncCccDisp {
             e.printStackTrace();
         }
         // 这里已经将结果返回给客户端了
-        __cb.ice_response(s);  // 接信息返回给客户端
+        __cb.ice_response("获取java端参数："+s+",并将设备id的点位数据返回给java端。。。。。");  // 将执行结果返回给java客户端
 
         // 执行其他的操作
         System.out.println("将信息返回给Java端，并执行其他扫尾操作。。。。");

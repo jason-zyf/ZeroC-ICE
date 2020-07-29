@@ -23,7 +23,7 @@ public class CccClient {
             ic = Util.initialize(args);
 
             // 获取java的代理对象
-            ObjectPrx base = ic.stringToProxy("testJava:default -p 9999");
+            ObjectPrx base = ic.stringToProxy("ccc:default -p 6666");
             if(base == null){
                 throw new RuntimeException("Cannot create proxy");
             }

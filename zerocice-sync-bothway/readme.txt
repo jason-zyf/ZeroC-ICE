@@ -1,0 +1,3 @@
+此工程是模拟客户端与服务端分离在不同服务器上的场景
+sync-bothway-client  模拟客户端，需要将ice文件通过slice2java编译
+sync-bothway-server  模拟服务端，需要将ice文件通过slice2java编译
