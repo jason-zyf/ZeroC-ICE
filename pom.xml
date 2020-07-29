@@ -13,8 +13,8 @@
         <module>zerocice-demo</module>
         <module>zerocice-async-ami</module>
         <module>zerocice-async-amd</module>
-        <module>zerocice-async-twoway</module>
         <module>zerocice-sync-bothway</module>
+        <module>zerocice-async-bothway</module>
     </modules>
 
     <dependencies>
