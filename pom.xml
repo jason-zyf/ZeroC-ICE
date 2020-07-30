@@ -15,13 +15,20 @@
         <module>zerocice-async-amd</module>
         <module>zerocice-sync-bothway</module>
         <module>zerocice-async-bothway</module>
+        <module>zerocice-demo-book</module>
+        <module>zerocice-book</module>
     </modules>
 
     <dependencies>
         <dependency>
             <groupId>com.zeroc</groupId>
             <artifactId>ice</artifactId>
-            <version>3.6.3</version>
+            <version>3.6.4</version>
+        </dependency>
+        <dependency>
+            <groupId>com.zeroc</groupId>
+            <artifactId>icebox</artifactId>
+            <version>3.6.4</version>
         </dependency>
     </dependencies>
 
