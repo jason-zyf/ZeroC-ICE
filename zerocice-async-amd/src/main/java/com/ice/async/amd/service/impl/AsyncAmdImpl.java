@@ -29,7 +29,7 @@ public class AsyncAmdImpl extends _AsyncAmdDisp {
             e.printStackTrace();
         }
         // 这里已经将结果返回给客户端了
-        __cb.ice_response(s);  // 接信息返回给客户端
+        __cb.ice_response("服务端数据："+s);  // 接信息返回给客户端
     }
 
 }

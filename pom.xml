@@ -17,6 +17,7 @@
         <module>zerocice-async-bothway</module>
         <module>zerocice-demo-book</module>
         <module>zerocice-book</module>
+        <module>zerocice-ccc-client</module>
     </modules>
 
     <dependencies>
@@ -25,11 +26,27 @@
             <artifactId>ice</artifactId>
             <version>3.6.4</version>
         </dependency>
+
         <dependency>
             <groupId>com.zeroc</groupId>
             <artifactId>icebox</artifactId>
             <version>3.6.4</version>
         </dependency>
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- 引入益著给的jar包 -->
+        <!--<dependency>
+            <groupId>com.zeroc</groupId>
+            <artifactId>ice-start</artifactId>
+            <version>1.1.0</version>
+        </dependency>-->
+
     </dependencies>
 
 </project>

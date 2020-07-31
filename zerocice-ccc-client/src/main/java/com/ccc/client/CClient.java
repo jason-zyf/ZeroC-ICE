@@ -74,15 +74,14 @@ public class CClient {
             // 5、调用远程服务端方法
             accessorPrx.QueryEntitiesValue(register, interfaced, info, entitiesArray);
 
-            System.out.println("客户端启动。。。。");
             log.info("客户端启动。。。。。。");
 
             // 接受15秒后再取消订阅
-            TimeUnit.SECONDS.sleep(15);
+//            TimeUnit.SECONDS.sleep(15);
 
             // 6、取消订阅
-            boolean b = accessorPrx.UnSubscribe(register);
-            log.info("是否取消订阅成功："+b);
+//            boolean b = accessorPrx.UnSubscribe(register);
+//            log.info("是否取消订阅成功："+b);
 
         }catch (LocalException e){
             e.printStackTrace();
