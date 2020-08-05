@@ -18,6 +18,7 @@
         <module>zerocice-demo-book</module>
         <module>zerocice-book</module>
         <module>zerocice-ccc-client</module>
+        <module>springboot-ice-demo</module>
     </modules>
 
     <dependencies>
